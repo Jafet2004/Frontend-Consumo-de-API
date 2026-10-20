@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Perros | Dog API</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>🐶 Galería de Perros</h1>
+        <p>Portal web que consume la API pública <strong>Dog CEO</strong> con <code>fetch()</code></p>
+    </header>
+
+    <main>
+        <section class="panel">
+            <label for="selectRaza">Elige una raza:</label>
+            <select id="selectRaza">
+                <option value="">Cargando razas...</option>
+            </select>
+
+            <div class="botones">
+                <button id="btnRaza">Ver fotos de la raza (async/await)</button>
+                <button id="btnAzar" class="secundario">Foto al azar (.then)</button>
+            </div>
+
+            <p id="estado" class="estado">Selecciona una raza para comenzar.</p>
+        </section>
+
+        <section id="galeria" class="galeria"></section>
+    </main>
+
+    <footer>
+        <p>Datos obtenidos de <a href="https://dog.ceo/dog-api/" target="_blank">dog.ceo/dog-api</a></p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
